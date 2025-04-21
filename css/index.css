@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* outline: 1px red solid; */
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.topo{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+.topo .menu{
+    list-style-type: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.topo h1{
+    color: aliceblue;
+}
+
+.menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+}
+.topo .menu a{
+    width: 25%;
+    text-decoration: none;
+}
+.topo .menu li:hover{
+    background-color: rgb(58, 58, 58);
+}
+#menubtn{
+    width: 20px;
+    display: none;
+    z-index: 1;
+}
+
+#menubtn img{
+    width: 100%;
+}
+svg{
+    display: block;
+    position: absolute;
+}
+.home{
+    flex-wrap: wrap;
+    color: white;
+    width: calc(100%-40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 30px 50px;
+}
+.home .apresentacao{
+    min-width: 300px;
+    width: 50%;
+}
+.home .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.home .image img{
+    max-width: 500px;
+    width: 100%;
+}
+.home h1{
+    color: white;
+    font-size: 5vw;
+    width: 100%;
+}
+.home h2{
+    color: white;
+    font-size: 3vw;
+    width: 100%;
+}
+.home .links{
+    flex-wrap: wrap;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.home .links p{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 10px;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: darkblue;
+}
+.home .btn-down p img{
+    background: none;
+    border: none;
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+}
+.home .apresentacao img{
+    background-color: white;
+    filter: invert(1);
+    border-radius: 50%;
+    border: black 1px solid;
+    width: 30px;
+    height: 30px;
+    padding: 10px 10px;
+}
+.home a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+.sobre{
+    background-color: black;
+    padding: 50px 5%;
+    color: white;
+    width: calc(100%-10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-image: linear-gradient(0deg,#3f5c66 , rgb(0, 1, 70)); */
+}
+.sobre h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.sobre p{
+    color: white;
+    text-indent: 50px;
+    font-size: 32px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.habilidades{
+    /* outline: red 1px solid; */
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.habilidades h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:0px;
+}
+.habilidades .listaskill{
+    width: calc(100% - 60px);
+    padding: 30px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+
+
+}
+.habilidades .skill{
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.habilidades .skill .totallevel{
+    margin: 10px 0px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    outline: aqua solid 1px;
+    overflow: hidden;
+}
+
+.habilidades .skill .actuallevel{
+    margin: 2px 2px;
+    width: 80%;
+    background-color: aqua;
+    border-radius: 10px;
+    height: 18px;
+}
+
+
+.projetos{
+    color: white;
+    background:black;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.projetos h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.projetos .lista-card{
+    flex-wrap: wrap;
+    padding: 40px 40px;
+    width: calc(100% - 80px);
+    display: flex;
+    justify-content: left;
+}
+.projetos .projeto-card{
+    margin: 0px 30px 0px 0px;
+    overflow: hidden;
+    border: #3f5c66 solid 1px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projetos .projeto-card .div-img{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+.projetos .projeto-card img{
+    height: 100%;
+}
+.projetos .projeto-card p{
+    width: calc(100%-20px);
+    text-align: justify;
+    padding: 10px 10px;
+    text-indent: 40px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    .topo .menu{
+        top:20px;
+        background-color: black;
+        list-style-type: none;
+        width: 50%;
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        height: auto;
+        z-index: 1;
+        border-radius: 10px;
+        outline: white solid 1px;
+    }
+    .topo .menu a{
+        width: 100%;
+        text-decoration: none;
+    }
+    #menubtn{
+        top:20px;
+        right: 30px;
+        position: fixed;
+        display: block;
+        width: 32px;
+    }
+    #menubtn img{
+        width: 100%;
+    }
+    .home .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .home h1{
+        color: white;
+        font-size: 30px;
+        width: 100%;
+    }
+    .home h2{
+        color: white;
+        font-size: 25px;
+        width: 100%;
+    }
+    .sobre p{
+        color: white;
+        text-indent: 30px;
+        font-size: 20px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+}
